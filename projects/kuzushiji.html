@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Kuzushiji Character Translation - Bodee Davis</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Bodee Davis</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../resume.pdf" class="nav-link nav-resume" download>Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <div class="project-detail">
+        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        
+        <div class="project-header">
+            <h1>Japanese Kuzushiji Character Translation</h1>
+            <div class="project-meta">
+                <span><strong>Duration:</strong> Personal Project</span>
+                <span><strong>Role:</strong> Developer</span>
+                <span><strong>Type:</strong> Deep Learning / Computer Vision</span>
+            </div>
+            <div class="project-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">CNN</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Character Recognition</span>
+            </div>
+        </div>
+
+        <div class="project-hero-image">
+            <img src="../images/kuzushiji/sample.png" alt="Japanese Kuzushiji Character Translation" onerror="this.src='https://via.placeholder.com/900x400/9B59B6/ffffff?text=Japanese+Kuzushiji+Character+Translation'">
+        </div>
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                An passion project utilizing my interest in linguistics to learn more about deep learning and computer vision.
+                Developed a Convolutional Neural Network using PyTorch to translate historical 
+                Japanese Kuzushiji characters to their modern equivalents. Kuzushiji (崩し字) refers to 
+                older, cursive-style Japanese characters that can be difficult for modern readers to 
+                interpret. Although the characters are not widely used by younger generations, they are 
+                used by elders, often from rural areas.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Convolutional Neural Network for character recognition</li>
+                <li>PyTorch implementation</li>
+                <li>Translation from historical Kuzushiji to modern Japanese characters</li>
+                <li>Image preprocessing and augmentation for robust training</li>
+                <li>Character classification and mapping system</li>
+                <li>Model evaluation and accuracy metrics</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <p>
+                The character translation system was built using modern deep learning techniques:
+            </p>
+            <ul>
+                <li><strong>Data Collection:</strong>  Utilized the Kuzushiji-49 dataset, a collection of 217,912 
+                    grayscale images of size 28x28 pixels, to train the model.</li>
+                <li><strong>Image Preprocessing:</strong> Implemented preprocessing pipeline including 
+                    normalization, resizing, and augmentation</li>
+                <li><strong>CNN Architecture:</strong> Implemented a convolutional neural network 
+                    architecture</li>
+                <li><strong>Model Training:</strong> Trained model using PyTorch with loss 
+                    functions and optimization techniques for multi-class character classification</li>
+                <li><strong>Evaluation:</strong> Tested model on test set of 38,547 images to evaluate accuracy, achieving 89% accuracy.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Challenges & Solutions</h2>
+            <p>
+                <strong>Challenge 1: Character Variability</strong><br>
+                Kuzushiji characters have significant stylistic variation. I implemented data augmentation 
+                techniques and designed a CNN architecture that can handle character variations 
+                while maintaining accuracy.
+            </p>
+            <p>
+                <strong>Challenge 2: Limited Training Data</strong><br>
+                Historical character datasets can be limited. I used the Kuzushiji-49 dataset, which is a collection of 217,912 images of size 28x28 pixels,
+                but this set is not balanced. I used data augmentation techniques to balance the dataset and improve the model's generalization.
+            </p>
+            <p>
+                <strong>Challenge 3: Similar Character Distinction</strong><br>
+                Some Kuzushiji characters are visually similar but map to different modern characters. 
+                I fine-tuned the model architecture and training process to improve discrimination 
+                between similar characters.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Results & Future Work</h2>
+            <p>
+                The Kuzushiji translation system achieved 89% accuracy on the test set.
+            </p>
+            <p>
+                Future work includes implementing a more complex model architecture and training process to improve accuracy.
+                Additionally, I would like to implement a program that utilizes the model for real-time character recognition.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-item">PyTorch</span>
+                <span class="tech-item">CNN</span>
+                <span class="tech-item">Deep Learning</span>
+                <span class="tech-item">Computer Vision</span>
+                <span class="tech-item">Image Processing</span>
+                <span class="tech-item">Character Recognition</span>
+                <span class="tech-item">Python</span>
+                <span class="tech-item">Data Augmentation</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://github.com/BodhiDavis/kizashiji-cnn" target="_blank" class="btn-secondary">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bodee Davis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

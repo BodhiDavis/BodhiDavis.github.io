@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAM Navigation Pipeline - Bodee Davis</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Bodee Davis</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../resume.pdf" class="nav-link nav-resume" download>Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <div class="project-detail">
+        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        
+        <div class="project-header">
+            <h1>SLAM Navigation Pipeline</h1>
+            <div class="project-meta">
+                <span><strong>Duration:</strong> 1 semester</span>
+                <span><strong>Role:</strong> Student Developer</span>
+                <span><strong>Course:</strong> ROB 330</span>
+            </div>
+            <div class="project-tags">
+                <span class="tag">SLAM</span>
+                <span class="tag">A* Planning</span>
+                <span class="tag">LiDAR</span>
+                <span class="tag">Monte Carlo Localization</span>
+                <span class="tag">Particle Filters</span>
+                <span class="tag">Occupancy Grids</span>
+                <span class="tag">Path Planning</span>
+                <span class="tag">ROS</span>
+            </div>
+        </div>
+
+        <div class="project-hero-image">
+            <img src="../images/rob330/hero.png" alt="SLAM Navigation Pipeline" onerror="this.src='https://via.placeholder.com/900x400/E94B3C/ffffff?text=SLAM+Navigation+Pipeline'">
+        </div>
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                Implemented a complete SLAM (Simultaneous Localization and Mapping) and 
+                navigation pipeline for a differential drive robot in the course ROB 330 at the University 
+                of Michigan. The system enables autonomous exploration through LiDAR mapping, Monte Carlo Localization,
+                frontier detection, and A* path planning.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Complete SLAM implementation for differential drive robots</li>
+                <li>LiDAR-based mapping and localization</li>
+                <li>Monte Carlo Localization for accurate robot pose estimation</li>
+                <li>Frontier detection for efficient exploration</li>
+                <li>A* path planning algorithm for optimal navigation</li>
+                <li>Autonomous exploration capabilities</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <p>
+            <ul>
+                <li><strong>Sensor Processing:</strong> Implemented LiDAR data processing for obstacle 
+                    detection and feature extraction in real-time</li>
+                <li><strong>Localization:</strong> Developed localization system using particle filters with 
+                    motor encoder data for accurate robot pose estimation in known and unknown environments</li>
+                <li><strong>Mapping:</strong> Created occupancy grid mapping system using LiDAR data 
+                    to build accurate representations of the environment</li>
+                <li><strong>Path Planning:</strong> Implemented A* algorithm for optimal path finding with 
+                    obstacle avoidance and dynamic replanning capabilities</li>
+                <li><strong>Navigation:</strong> Integrated all subsystems to enable autonomous exploration 
+                    and navigation in complex environments</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Challenges & Solutions</h2>
+            <p>
+                <strong>Challenge 1: Real-time Performance</strong><br>
+                SLAM algorithms are computationally intensive. We optimized data structures and 
+                implemented efficient algorithms to maintain real-time performance on embedded hardware.
+            </p>
+            <p>
+                <strong>Challenge 2: Sensor Noise and Mixing</strong><br>
+                LiDAR data contains noise and measurement uncertainties. We implemented robust 
+                filtering techniques and sensor fusion to maintain mapping accuracy.
+            </p>
+            <p>
+                <strong>Challenge 3: Dynamic Environments</strong><br>
+                Real environments contain moving obstacles. We developed adaptive mapping and 
+                replanning strategies to handle dynamic changes in the environment.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Results & Impact</h2>
+            <p>
+                The SLAM navigation system achieved excellent performance:
+            </p>
+            <ul>
+                <li>Successfully mapped complex indoor environments with high accuracy</li>
+                <li>Demonstrated robust navigation in dynamic environments</li>
+                <li>Contributed to understanding of mobile robotics fundamentals</li>
+            </ul>
+            <p>
+                This project provided hands-on experience with core mobile robotics concepts and 
+                demonstrated practical implementation of SLAM and navigation algorithms.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-item">SLAM</span>
+                <span class="tech-item">A* Path Planning</span>
+                <span class="tech-item">LiDAR</span>
+                <span class="tech-item">Particle Filters</span>
+                <span class="tech-item">Occupancy Grids</span>
+                <span class="tech-item">C++</span>
+                <span class="tech-item">ROS</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://www.youtube.com/shorts/OZ9hb5XUERg" target="_blank" class="btn-outline">
+                    Watch Navigation Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bodee Davis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+

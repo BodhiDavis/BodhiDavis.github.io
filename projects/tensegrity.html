@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Bar Tensegrity Robot - Bodee Davis</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Bodee Davis</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="../resume.pdf" class="nav-link nav-resume" download>Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <div class="project-detail">
+        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        
+        <div class="project-header">
+            <h1>3-Bar Tensegrity Robot</h1>
+            <div class="project-meta">
+                <span><strong>Duration:</strong> Jan. 2023 - May 2023</span>
+                <span><strong>Role:</strong> Assistant Researcher</span>
+                <span><strong>Lab:</strong> Hybrid Dynamics Robotics Lab (HDRL)</span>
+            </div>
+            <div class="project-tags">
+                <span class="tag">Tensegrity</span>
+                <span class="tag">PID Control</span>
+                <span class="tag">IMU</span>
+                <span class="tag">Research</span>
+                <span class="tag">Rolling Locomotion</span>
+            </div>
+        </div>
+
+        <div class="project-hero-image">
+            <img src="../images/tensegrity/hero.png" alt="3-Bar Tensegrity Robot" onerror="this.src='https://via.placeholder.com/900x400/50C878/ffffff?text=3-Bar+Tensegrity+Robot'">
+        </div>
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                As an Assistant Researcher in the Hybrid Dynamics Robotics Lab at the 
+                University of Michigan, I designed a 3-bar tensegrity robot capable of controlled 
+                rolling locomotion. The robot utilized a staged movement gait system with IMU sensors and 
+                motor encoders for state estimation, controlled by PID controllers to actuate smooth transitions 
+                between different contracted shapes. This project acted as my first research project, learning
+                the basics of both robotics and research.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>3-bar tensegrity structure with controlled rolling locomotion</li>
+                <li>Staged movement gait system for smooth shape transitions</li>
+                <li>IMU-based state estimation for real-time pose tracking</li>
+                <li>Motor encoder feedback for precise actuator control</li>
+                <li>State machine with PID control for smooth shape transitions</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Technical Approach</h2>
+            <p>
+                The tensegrity robot development involved several key technical components:
+            </p>
+            <ul>
+                <li><strong>Mechanical Design:</strong> Designed 3-bar tensegrity structure with optimal 
+                    cable tensioning and joint configurations for rolling locomotion</li>
+                <li><strong>Sensor Integration:</strong> Integrated IMU sensors for orientation tracking 
+                    and motor encoders for actuator position feedback</li>
+                <li><strong>Control System:</strong> Developed PID controllers to manage smooth 
+                    transitions between different contracted shapes during rolling motion</li>
+                <li><strong>Gait Development:</strong> Created staged movement patterns that exploit 
+                    tensegrity structure dynamics for controlled rolling locomotion</li>
+                <li><strong>State Estimation:</strong> Implemented sensor fusion to combine 
+                    IMU and encoder data for accurate robot pose tracking</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Challenges & Solutions</h2>
+            <p>
+                <strong>Challenge 1: Tensegrity Dynamics</strong><br>
+                Tensegrity structures have complex, nonlinear dynamics that are difficult to model and 
+                control. We implemented a state machine with PID control to overcome the need for complex dynamic models.
+            </p>
+            <p>
+                <strong>Challenge 2: Shape Transition Control</strong><br>
+                Smooth transitions between different contracted shapes are esstential for efefctive rolling locomotion. 
+                I did thorough PID controller tuning to achieve smooth shape transitions and maintain forward motion.
+            </p>
+            <p>
+                <strong>Challenge 3: Sensor Integration</strong><br>
+                Combining IMU and encoder data for accurate state estimation in a rolling robot was 
+                challenging. We developed custom sensor fusion algorithms that account for the robot's 
+                unique motion characteristics.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Results & Future Work</h2>
+            <p>
+                The tensegrity robot successfully demonstrated controlled rolling locomotion in a 3-bar tensegrity structure.
+                Future work includes implementing larger tensegrity with onboard electronics to prevent intereference.
+                Additionally, dynamic modeling and control of the tensegrity structure is necessary for more complex locomotion.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-item">Tensegrity Structures</span>
+                <span class="tech-item">PID Control</span>
+                <span class="tech-item">IMU Sensors</span>
+                <span class="tech-item">Motor Encoders</span>
+                <span class="tech-item">State Estimation</span>
+                <span class="tech-item">Sensor Fusion</span>
+                <span class="tech-item">Rolling Locomotion</span>
+                <span class="tech-item">Research</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://www.youtube.com/shorts/l2lPk__QLNI " target="_blank" class="btn-secondary">
+                    Watch Robot Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Bodee Davis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
